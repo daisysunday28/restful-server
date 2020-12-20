@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 16, 2020 at 04:26 AM
+-- Generation Time: Dec 20, 2020 at 09:24 AM
 -- Server version: 10.1.13-MariaDB
 -- PHP Version: 5.6.23
 
@@ -63,7 +63,7 @@ CREATE TABLE `limits` (
 --
 
 INSERT INTO `limits` (`id`, `uri`, `count`, `hour_started`, `api_key`) VALUES
-(1, 'uri:api/pesanan/index:get', 3, 1608088795, 'kdr123');
+(1, 'uri:api/pesanan/index:get', 18, 1608400635, 'kdr123');
 
 -- --------------------------------------------------------
 
@@ -85,7 +85,11 @@ CREATE TABLE `pesanan` (
 --
 
 INSERT INTO `pesanan` (`id_pesan`, `nama_team`, `alamat`, `tanggal_berangkat`, `tanggal_pulang`, `no_hp`) VALUES
-(1, 'rahman', 'lowokwaru malang', '12 november', '15 november', '085248921777');
+(3, 'Amelia', 'Jl. Simpang Pakisaji No.60-62, Golek, Karangduren, Kec. Pakisaji, Malang', '10 Oktober 2020', '13 Oktober 2020', '082178906543'),
+(5, 'Bayu', 'Jl. Raya Made, Made, Kec. Lamongan, Kabupaten Lamongan', '05 November 2020', '07 November 2020', '085789342156'),
+(9, 'Alfian', 'kebun bibit, Jl. Wonorejo, Wonorejo, Kec. Rungkut, Kota Surabaya', '02 November 2020', '05 November 2020', '089765432123'),
+(10, 'Intan', 'Jalan Dusun Wringinanom, RT.07/RW.02, Simpar Utara, Wringinanom, Poncokusumo, Malang', '02 November 2020', '04 November 2020', '081335923877'),
+(11, 'Hartono', 'Jl. Kapten Tendean No.230B, Rejomulyo, Kec. Kota Kediri, Kota Kediri', '05 Desember 2020', '09 Desember 2020', '081752823282');
 
 --
 -- Indexes for dumped tables
@@ -127,7 +131,7 @@ ALTER TABLE `limits`
 -- AUTO_INCREMENT for table `pesanan`
 --
 ALTER TABLE `pesanan`
-  MODIFY `id_pesan` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_pesan` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
